@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shopping Cart</title>
+        <link href="src/css/output.css" rel="stylesheet" />
+    </head>
+    <body class="bg-neutral-50 min-h-screen flex flex-col">
+        <div class="container mx-auto px-4 py-8 mt-4 flex-grow">
+            <!-- Pake bg-clip-text biar tulisannya jadi gradient -->
+            <h1
+                class="text-4xl md:text-6xl font-bold mb-4 md:mb-8 bg-gradient-to-r from-primary to-gasendra-cream text-transparent bg-clip-text"
+            >
+                SHOPPING <span class="font-thin">CART</span>
+            </h1>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2">
+                    <!-- Cart Items -->
+                    <div class="space-y-4">
+                        <!-- Item 1 -->
+                        <div
+                            class="flex items-center py-4 border-b border-gray-300"
+                        >
+                            <img
+                                src="./public/images/baju.png"
+                                alt="OTSKY Men's Solid Ottoman Golf Polo Shirt"
+                                class="w-24 h-28 object-cover mr-4 rounded-lg"
+                            />
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-semibold">
+                                    This OTSKY Men's Solid Ottoman Golf Polo
+                                    Shirt
+                                </h3>
+                                <p class="text-gray-600">Rp. 100.000,-</p>
+                            </div>
+                            <div class="flex items-center font-semibold">
+                                <a href="#" class="px-2 py-1 border">-</a>
+                                <span class="px-4 py-1">2</span>
+                                <a href="#" class="px-2 py-1 border"> + </a>
+                                <a
+                                    href="#"
+                                    class="ml-6 text-red-500 border p-1"
+                                >
+                                    <svg
+                                        xmlns="httppublicwww.w3.org/2000/svg"
+                                        class="h-6 w-6"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                                        />
+                                        public
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div
+                            class="flex items-center py-4 border-b border-gray-300"
+                        >
+                            <img
+                                src="./public/images/baju.png"
+                                alt="OTSKY Men's Solid Ottoman Golf Polo Shirt"
+                                class="w-24 h-28 object-cover mr-4 rounded-lg"
+                            />
+                            <div class="flex-grow">
+                                <h3 class="text-lg font-semibold">
+                                    This OTSKY Men's Solid Ottoman Golf Polo
+                                    Shirt
+                                </h3>
+                                <p class="text-gray-600">Rp. 100.000,-</p>
+                            </div>
+                            <div class="flex items-center font-semibold">
+                                <a href="#" class="px-2 py-1 border">-</a>
+                                <span class="px-4 py-1">2</span>
+                                <a href="#" class="px-2 py-1 border"> + </a>
+                                <a
+                                    href="#"
+                                    class="ml-6 text-red-500 border p-1"
+                                >
+                                    <svg
+                                        xmlns="httppublicwww.w3.org/2000/svg"
+                                        class="h-6 w-6"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                                        />
+                                        public
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="lg:col-span-1">
+                    <div class="bg-white rounded-xl shadow-lg p-6">
+                        <h2 class="text-2xl font-semibold mb-4">
+                            Order Summary
+                        </h2>
+                        <div class="space-y-5">
+                            <div class="flex justify-between">
+                                <span>Subtotal</span>
+                                <span>Rp. 500.000,-</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Shipping</span>
+                                <span>Free</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Discount</span>
+                                <span>Rp. 50.000,-</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Tax</span>
+                                <span>Rp. 5.000,-</span>
+                            </div>
+                            <hr class="h-px my-8 bg-black border-0" />
+                            <div
+                                class="flex justify-between font-semibold text-lg"
+                            >
+                                <span>Total Price</span>
+                                <span>Rp. 455.000,-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="w-full md:col-start-3 bg-primary font-semibold text-black py-3 rounded-lg hover:bg-[#d9a93e] transition-colors duration-300"
+                >
+                    Checkout
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer
+            class="bg-gradient-to-r from-gasendra-blue-primary to-gasendra-blue-secondary text-white py-6"
+        >
+            <div
+                class="container mx-auto text-center px-10 flex flex-col md:flex-row"
+            >
+                <div
+                    class="brand flex items-center space-x-3 me-auto mb-5 md:mb-0"
+                >
+                    <img
+                        class="h-[4em] md:h-[5em]"
+                        src="./public/images/GASENDRA-comp.png"
+                        alt="Logo Gasendra"
+                    />
+                    <h1
+                        class="text-[.5em] md:text-sm uppercase text-white text-left"
+                    >
+                        <span class="font-bold text-[1.5em]"
+                            >Kabinet Gasendra</span
+                        >
+                        <br />
+                        Keluarga Mahasiswa ITERA
+                    </h1>
+                </div>
+                <div class="socmed flex items-center space-x-4">
+                    <a href="" class="instagram">
+                        <img src="./public/images/Instagram.svg" alt="insta" />
+                    </a>
+                    <a href="" class="x">
+                        <img src="./public/images/Twitter.svg" alt="x" />
+                    </a>
+                    <a href="" class="youtube">
+                        <img src="./public/images/Youtube.svg" alt="yt" />
+                    </a>
+                    <a href="" class="spotify">
+                        <img src="./public/images/Spotify.svg" alt="spotify" />
+                    </a>
+                </div>
+            </div>
+            <div class="copyright text-center pt-5">
+                <p class="text-[.5em] md:text-[1em]">
+                    Copyright &copy; 2024 Kementerian Teknologi Informasi. All
+                    Right Reserved
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
